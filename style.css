@@ -1,0 +1,147 @@
+/* All */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #3b4664; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b4664;
+}
+
+/* Cal heading */
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Cal body */
+.cal{
+    width: 35vw;
+    height: 87vh;
+    background-color: #3b4664;
+}
+.name{
+    color: #f5f8fc;
+    padding: 20px 0px;
+    font-weight: 800;
+}
+
+/* display */
+.display {
+    display: flex;
+    justify-content: flex-end;
+}
+.display input{
+    background-color: #181f32;
+    width: 100%;
+    height: 18vh;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 65px;
+    font-weight: 500;
+    color: #feffff;
+    padding: 0 20px;
+}
+
+/* num pad */
+.num-pad{
+    height: 58vh;
+    width: 100%;
+    background-color: #252d44;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* numbers */
+.num-pad div input{
+    height: 8vh;
+    width: 7vw;
+    background-color: #eae3db;
+    border-radius: 10px;
+    border: none;
+}
+.num-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 35vw;
+    height: 43vh;
+    margin: auto;
+    padding-top: 35px;
+    justify-content: center;
+}
+.num-container div input{
+    color: #424653;
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: 0px 4px #b4a397;
+    margin: 0 7px;
+}
+
+/* result */
+.long-btn{
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+}
+.long-btn .reset-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7fbff;
+    font-size: 1.65rem;
+    font-weight: 700;
+    box-shadow: 0px 4px #414e71;
+    background-color: #647299;
+    height: 7vh;
+    width: 15.5vw;
+    border-radius: 10px;
+}
+.long-btn .equal-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7fbff;
+    font-size: 1.65rem;
+    font-weight: 700;
+    box-shadow: 0px 4px #96271c;
+    background-color: #d13f30;
+    height: 7vh;
+    width: 15.5vw;
+    border-radius: 10px;
+}
+.num-container div .delet-btn{
+    color: #f7fbff;
+    background-color: #647299;
+    box-shadow: 0px 4px #414e71;
+}
+
+/* animation */
+.num-container div input:active{
+    animation: button 1s ease-in-out;
+    box-shadow: 0px 2px #b4a397;
+    transform: translateY(3px);
+}
+
+.reset-btn:active{
+    animation: button 1s ease-in-out;
+    box-shadow: 0px 2px #414e71;
+    transform: translateY(3px);
+}
+.equal-btn:active{
+    animation: button 1s ease-in-out;
+    box-shadow: 0px 2px #96271c;
+    transform: translateY(3px);
+}
+.num-container div .delet-btn:active{
+    box-shadow: 0px 4px #414e71;
+    animation: button 1s ease-in-out;
+    transform: translateY(3px);
+}
