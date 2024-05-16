@@ -4,14 +4,16 @@
     padding: 0;
     font-family: sans-serif;
 }
+body{
+    background-color: #3b4664;
+}
 .container{
     height: 100vh;
-    width: 100%;
-    /* background-color: #3b4664; */
+    width: 66vmin;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3b4664;
+    margin: auto;
 }
 
 /* Cal heading */
@@ -21,11 +23,6 @@
 }
 
 /* Cal body */
-.cal{
-    width: 35vw;
-    height: 87vh;
-    background-color: #3b4664;
-}
 .name{
     color: #f5f8fc;
     padding: 20px 0px;
@@ -54,7 +51,6 @@
 /* num pad */
 .num-pad{
     height: 58vh;
-    width: 100%;
     background-color: #252d44;
     border-radius: 10px;
     margin-top: 20px;
@@ -71,7 +67,6 @@
 .num-container{
     display: flex;
     flex-wrap: wrap;
-    width: 35vw;
     height: 43vh;
     margin: auto;
     padding-top: 35px;
@@ -144,4 +139,26 @@
     box-shadow: 0px 4px #414e71;
     animation: button 1s ease-in-out;
     transform: translateY(3px);
+}
+
+/* media */
+@media (max-width: 1120px){
+    .container{
+        width: 89vmin;
+    }
+    .num-container div input{
+        font-size: 1.5rem;
+        margin: 0px 1px;
+    }
+    .num-pad div input {
+        width: 19vw;
+    }
+    .long-btn .reset-btn{
+        font-size: 1.5rem;
+        width: 40vw;
+    }
+    .long-btn .equal-btn{
+        font-size: 1.5rem;
+        width: 40vw;
+    }
 }
